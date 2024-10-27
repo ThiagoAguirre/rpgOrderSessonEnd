@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente Especial</title>
+    <style>
+        /* Estilo retro de console */
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container principal */
+        .container {
+            border: 2px solid #00ff00;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Estilo do título principal */
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo do subtítulo */
+        .subtitle {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        /* Texto de introdução */
+        .intro {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo da seção de menu */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            border: 1px solid #00ff00;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #003300;
+        }
+
+        /* Estilo da área de status (No Signal) */
+        .status-box {
+            border: 1px solid #00ff00;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        /* Características do agente */
+        .agent-characteristics {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .characteristics-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-align: center;
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 5px;
+        }
+
+        .characteristics-table {
+            width: 100%;
+        }
+
+        .characteristics-table td {
+            padding: 5px;
+            border: 1px solid #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título e Introdução -->
+        <div class="title">AGENTE ESPECIAL</div>
+        <div class="subtitle">A muralha invisível</div>
+        <div class="intro">
+            A bravura provém do sangue, a coragem provém do pensamento sanguinário.
+        </div>
+
+        <!-- Menu de navegação -->
+        <div class="menu">
+            <div class="menu-item">História</div>
+            <div class="menu-item">Guidelines</div>
+            <div class="menu-item">Contribute</div>
+            <div class="menu-item">Files</div>
+            <div class="menu-item">Compra</div>
+            <div class="menu-item">Resources</div>
+        </div>
+
+        <!-- Caixa de status -->
+        <div class="status-box">-- NO SIGNAL --</div>
+
+        <!-- Características do agente -->
+        <div class="agent-characteristics">
+            <div class="characteristics-title">CARACTERÍSTICAS DO AGENTE</div>
+            <table class="characteristics-table">
+                <tr>
+                    <td>Nome:</td>
+                    <td>Thiago</td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Classe:</td>
+                    <td>Ocultista</td>
+                </tr>
+                <tr>
+                    <td>Elemento:</td>
+                    <td>Energia</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
