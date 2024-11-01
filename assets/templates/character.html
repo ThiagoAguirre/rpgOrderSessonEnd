@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters</title>
+    <link rel="stylesheet" href="../style/character.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="../img/characters/The-Queen.jpg" alt="1" />
+          <h1>Cesar</h1>
+          <div class="details">
+            <h2>Mike</h2>
+            <p>web3 Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="../img/characters/The-Queen.jpg" alt="2" />
+          <h1>samite</h1>
+          <div class="details">
+            <h2>samite</h2>
+            <p>wordpress Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="../img/characters/The-Queen.jpg" alt="3" />
+          <h1>hashi</h1>
+          <div class="details">
+            <h2>hashi</h2>
+            <p>java Developer</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="../img/characters/The-Queen.jpg" alt="4" />
+          <h1>kaity</h1>
+          <div class="details">
+            <h2>kaity</h2>
+            <p>web Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="../img/characters/The-Queen.jpg" alt="5" />
+          <h1>lauren</h1>
+          <div class="details">
+            <h2>lauren</h2>
+            <p>php Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="../img/characters/The-Queen.jpg" alt="6" />
+          <h1>ryan</h1>
+          <div class="details">
+            <h2>ryan</h2>
+            <p>seo Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="../img/characters/The-Queen.jpg" alt="7" />
+          <h1>dakes</h1>
+          <div class="details">
+            <h2>dakes</h2>
+            <p>sql Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script 
+    src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+    crossorigin="anonymous"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

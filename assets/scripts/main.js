@@ -4,10 +4,10 @@ function getLogin() {
     const validateLogin = verificarLogin(login, password);
 
     if (validateLogin) {
-        alert('Welcome ${login} a ORDEM ${password}');
+        alert("Login is sucessul!");  
         location.href = "./assets/templates/home.html";
     } else {
-        alert('User or password incorrect');
+      alert("Login or password invalid!");
     }
 }
 
