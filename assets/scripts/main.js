@@ -15,6 +15,7 @@ function verificarLogin(login, password) {
     const users = {
         "123": "123",  
         "222": "222",
+        "formiga": "rainha",
         "arrozdamamae": "9y4s2da7"
     };
 

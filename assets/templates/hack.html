@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarme a Bomba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        #game-container, #wire-cutting-game {
+            display: flex;
+            flex-wrap: wrap;
+            width: 320px;
+            margin: 20px auto;
+        }
+        .card {
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .card.flipped {
+            color: white;
+        }
+        #timer, #message, #question, #color-sequence-game, #wire-cutting-game {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+        #color-sequence, #color-input {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .color-button, .wire {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desarme a Bomba</h1>
+    <div id="timer">Tempo restante: 1:00</div>
+    <div id="game-container"></div>
+    <div id="message"></div>
+    <div id="question" style="display: none;">
+        <p>Resolva a conta: <span id="math-question"></span></p>
+        <input type="number" id="answer" placeholder="Sua resposta">
+        <button onclick="checkAnswer()">Responder</button>
+    </div>
+    <div id="color-sequence-game" style="display: none;">
+        <p>Memorize e repita a sequência de cores para cortar o fio correto!</p>
+        <div id="color-sequence"></div>
+        <button onclick="startColorSequence()">Iniciar Sequência</button>
+        <div id="color-input"></div>
+    </div>
+    
+    <!-- Simulação de Corte de Fios -->
+    <div id="wire-cutting-game" style="display: none;">
+        <p>Dica: Corte o fio verde que está entre dois fios vermelhos.</p>
+        <div id="wires-container">
+            <!-- Fios serão gerados dinamicamente -->
+        </div>
+    </div>
+
+    <script src="../scripts/game.js"></script>
+</body>
+</html>
